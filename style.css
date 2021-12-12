@@ -3,60 +3,80 @@
     margin: 0;
     box-sizing: border-box;
 }
-/* style for container */
+body{
+    background-color: grey;
+}
+h1, h2 , h3, h4, h5, h6{
+    text-transform: capitalize;
+    font-family: verderna;
+}
+hr{
+    color: red;
+}
+h1{
+    color: #6589ad;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 .container{
-    width: 80%;
-    height: 100vh;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    margin: 10% auto;
+    width: 90%;
+    margin: 20px auto;
+    background-color: #fff;
     position: relative;
 }
-/* style for the colored div on top of the container */
-.design{
-    width: 100%;
-    height: 30px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    position: absolute;
-}
-.design::before{
-    content: "";
-    z-index: 1;
-}
-/* specifying the position of the top div  */
-.top{
-    top: 0;
-}
-.blue{
-    background-color: rgb(96, 96, 255);
-    width: 40%;
-    height: 100%;
-}
-.white{
-    width: 60%;
-}
-.blue.footer{
-    background-color: rgb(96, 96, 255);
-    float: right;
-    width: 60%;
+.container :not(.design, hr){
+    padding: 10px;
 }
 
-.bottom{
-    bottom: 0;
+.design{
+    background-color: rgb(255, 199, 199);
+    width: 100%;
+    height: 30px;
 }
-  /**
- *! style for the content container 
- **/ 
- .cv-content{
-     padding: 10px;
-     font-family: sans-serif;
-     margin-top: 50px;
-     display: flex;
-     /* line-height: 1.5rem;
-     letter-spacing: 1.5em; */
- }
- .rightbar img{
-     width: 30%;
-     border-radius: 50%;
-     background-repeat: no-repeat;
-     background-size: cover;
- }
+.design > .blue{
+    background-color: rgb(103, 103, 255);
+    height:100%
+}
+.top{
+    width: 30%;
+}
+.footer{
+    width: 70%;
+    float: right;
+}
+.cv-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: all 0.3s linear;
+}
+.name h1{
+    font-size: 50px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.profile{
+    width: 350px;
+    height: 300px;
+    
+}
+ .profile img{
+    width: 100% ;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+}
+.skill-list{
+    columns: 2;
+}
+/* set up media queries for the responsive website */
+@media only screen and (max-width: 800px){
+    .cv-content{
+        display: block;
+        /* background-color: red; */
+    }
+    
+}

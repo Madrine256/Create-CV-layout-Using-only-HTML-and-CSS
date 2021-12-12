@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create your portofolio using Js </title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (min-width: 900px)" href="style.css">
+<link rel="stylesheet" media="screen and (max-width: 600px)" href="style.css">
 </head>
 <body>
     <!-- Create the cv layout -->
     <div class="container">
           <!--  top  page design -->
-          <div class="design top">
-            <div class="blue"></div>
-            <div class="white"></div>
+          <div class="design">
+            <div class="blue top"></div>
           </div>
           
 
@@ -30,28 +31,32 @@
                  <!-- /**
                  *! img div 
                  **/  -->
-                 <div class="img">
+                 <div class="profile">
                      <img src="./images/mads01.jpg" alt="Madrine image">
                  </div>
             <!-- /**
             *! Contacts div 
             **/  -->
                  <div class="contacts">
-                     <h1>Contacts</h1>
+                     <h1>Contacts</h1><hr>
                      <div>
-                        <label for="address">address</label>
+                        <h4>address:</h4>
                         <p id="address"> 123 katooke rd, kitinkokola Mityana, K'la Uganda</p>
                      </div>
                      <div>
-                         <label for="phone">Phone</label>
+                         <h4>Phone:</h4>
                          <p id="phone">+256 776493657</p>
                      </div>
+                     <div>
+                        <h4>Email:</h4>
+                        <p id="email">madrinsx@gmail.com</p>
+                    </div>
                  </div>
                  <!-- /**
                  *! languages  div 
                  **/  -->
-                 <div>
-                     <label for="lang">Languages</label>
+                 <div class="lang">
+                     <h1>Languages</h1><hr>
                      <ul>
                          <li>English</li>
                          <li>Luganda</li>
@@ -63,46 +68,47 @@
               <!-- leftside of the page   -->
               <div class="leftbar">
                   <div class="summary">
-                      <h4>Summary</h4>
+                      <h1>Summary</h1><hr>
                       <p>Junior  web developer specializing in front end developemnt. Experinced with all stages of developement cycle for dynamic web projects. Currently learning Javsscript</p>
                   </div>
                   <div class="skills">
-                    <h4>Skills and Intrests</h4>
-                    <ul>
+                    <h1>Skills highlights</h1><hr>
+                    <ul class="skill-list">
                         <li>Projects Management</li>
                         <li>Strong decison maker</li>
-                        <li>complex problem solver</li>
-                        <li>creative design</li>
+                        <li>Complex problem solver</li>
+                        <li>Creative design</li>
                         <li>Innovative</li>
                         <li>Service focused</li>
                     </ul>
                 </div>
                 <div class="experience">
-                    <h3>experience</h3>
-                    <h4><strong>Web developer</strong>09/2021 to present</h4>
+                    <h1>experience</h1><hr>
+                    <p><strong>Web developer</strong>09/2021 to Date</p>
                     <ul>
                         <li>Cooperate with designers to create clean interfaces abd simple , intutive interactions and experiences</li>
                         <li>Develop project concepts and maintain optimal workflow.</li>
-                        <li>work with different people online to manage large complex design projects'</li>
-                        <li>carry out quality assurance tests to discover errors and optimize usability</li>
+                        <li>Work with different people online to manage large complex design projects'</li>
+                        <li>Carry out quality assurance tests to discover errors and optimize usability</li>
                     </ul>
                 </div>
                 <div class="educ">
-                    <p>Self taught , online videos and articles</p>
+                    <h1>Education</h1><hr>
+                    <p>Self taught , videos and reading articles online</p>
                 </div>
                 <div class="certificates">
+                    <h1>Certificates</h1><hr>
                     <p>Still studying ... </p>
                 </div>
               </div>    
         </div>
          <!-- bottom page design -->
-         <div class="design bottom">
-            <div class="white footer"></div>
+         <div class="design">
             <div class="blue footer"></div>
          </div>
        
     </div>
  
-    <script src="main.js"></script>
+   
 </body>
 </html>
